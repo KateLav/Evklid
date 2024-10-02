@@ -44,7 +44,7 @@ html {
 
 .btn {
   display: inline-block;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   color: white;
   background-color: #ff9900;
@@ -74,21 +74,25 @@ html {
 
 .section-header {
   font-size: 48px;
-  font-weight: 300;
-  line-height: 1.2;
+  font-weight: 400;
+  line-height: 58.51px;
 }
 
 .text {
   font-size: 16px;
   line-height: 2;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .text-header {
   font-size: 24px;
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 29.26px;
+  font-weight: 700;
   margin-bottom: 8px;
+}
+
+.header__nav-burger {
+  display: none;
 }
 
 /* Header */
@@ -102,7 +106,7 @@ html {
 
 .header__container {
   height: 100px;
-  padding-top: 14px;
+  padding-top: 16px;
   padding-bottom: 14px;
   display: flex;
   align-items: center;
@@ -119,7 +123,7 @@ html {
 }
 
 .header__logo {
-  margin-right: 260px;
+  margin-right: 292px;
 }
 
 .header__nav-link {
@@ -129,26 +133,34 @@ html {
   color: #000000;
 }
 
+.header__search {
+  transform: translateY(4px);
+}
+
 /* Hero */
 
 .hero {
-  margin-bottom: 50px;
+  /* margin-bottom: 51px;
   background: url("../img/low-angle-photo-of-balconies-2462015\ 1.jpg") center
     no-repeat white;
-  background-size: contain;
+  background-size: contain; */
 }
 
 .hero__container {
+  margin-bottom: 51px;
+  background: url("../img/low-angle-photo-of-balconies-2462015\ 1.jpg") center
+    no-repeat white;
+  background-size: contain;
   height: 620px;
-  padding: 100px 80px;
+  padding: 101px 95px;
 }
 
 .hero__header {
   max-width: 837px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   font-size: 70px;
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 85.33px;
   color: #fff;
 }
 
@@ -157,20 +169,21 @@ html {
   margin-bottom: 90px;
   font-size: 24px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 29.26px;
   color: #fff;
 }
 
 .hero__btn {
+  width: 280px;
   padding: 25px 39px;
   font-size: 23px;
-  line-height: 28px;
+  line-height: 28.04px;
 }
 
 /* About */
 
 .about {
-  margin-bottom: 100px;
+  margin-bottom: 101px;
 }
 
 .about__header {
@@ -178,8 +191,8 @@ html {
 }
 
 .about__text {
-  max-width: 1232px;
-  margin-bottom: 50px;
+  max-width: 1235px;
+  margin-bottom: 49px;
 }
 
 .about__details {
@@ -209,12 +222,13 @@ html {
 
 .about__details-description {
   max-width: 433px;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
 }
 
 .about__btn {
-  padding: 17px 38px;
+  max-width: 175px;
+  padding: 17px 35px;
   background-color: transparent;
   border: #ff9900 solid 3px;
 }
@@ -222,9 +236,8 @@ html {
 .details-blocks {
   width: 870px;
   height: 295px;
-  padding: 65px 120px 65px 60px;
+  padding: 64px 59px;
   display: flex;
-  justify-content: space-between;
   border: 1px solid #cacaca;
   border-radius: 32px;
 }
@@ -235,6 +248,10 @@ html {
 
 .details__icon {
   margin-right: 50px;
+}
+
+.details__text-header {
+  width: 452px;
 }
 
 .details__text {
@@ -248,7 +265,7 @@ html {
 }
 
 .how__header {
-  margin-bottom: 50px;
+  margin-bottom: 51px;
 }
 
 .how__list {
@@ -257,13 +274,13 @@ html {
 }
 
 .how__item:not(:last-child) {
-  margin-right: 85px;
+  margin-right: 86px;
 }
 
 .how__slider-switch {
   font-size: 18px;
-  line-height: 1.1;
-  font-weight: 300;
+  line-height: 21.94px;
+  font-weight: 400;
   color: #000000;
 }
 
@@ -272,22 +289,29 @@ html {
   justify-content: space-between;
 }
 
-.how__text-header {
-  line-height: 2;
+.how__slider-text-header {
+  line-height: 32px;
 }
 
 .how__slider-text {
-  width: 758px;
-  margin-right: 142px;
-  margin-bottom: 18px;
+  max-width: 758px;
+  height: 352px;
+  margin-right: 141px;
+  margin-bottom: 17px;
+}
+
+.how__btns {
+  display: flex;
 }
 
 .how__details-btn {
   margin-right: 32px;
+  padding-top: 21px;
 }
 
 .how__contract-btn {
-  padding: 19px 38px;
+  width: 147px;
+  padding: 20px 37px;
   background-color: #fff;
   border: 1px solid #000000;
   color: #000000;
@@ -296,9 +320,9 @@ html {
 
 .how__slider-img {
   width: 870px;
-  height: 460px;
-  background: url(/img/how_slider_img1.png) center no-repeat white;
-  background-size: contain;
+  height: 469px;
+  background: url(/img/how_slider_img1.png) bottom no-repeat white;
+  background-size: 870px 460px;
 }
 
 /* Faq */
@@ -308,11 +332,14 @@ html {
 }
 
 .faq__section-header {
+  height: 70px;
   margin-bottom: 32px;
+  padding-top: 12px;
 }
 
 .faq__item {
-  padding: 30px 0 30px;
+  height: 111px;
+  padding: 32px 0 28px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #cacaca;
@@ -320,13 +347,15 @@ html {
 }
 
 .faq__item:first-child {
+  height: 112px;
+  padding: 32px 0 28px;
   border-top: 1px solid #cacaca;
 }
 
 .faq__item-text {
   font-size: 24px;
-  line-height: 1.3;
-  font-weight: 600;
+  line-height: 32px;
+  font-weight: 700;
 }
 
 .faq__item-answer-icon {
@@ -341,37 +370,46 @@ html {
 
 .footer {
   background-color: #000000;
+  height: 594px;
 }
 
 .footer__container {
+  height: 594px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 0;
+  padding: 48px 14px;
 }
 
 .footer__menu {
   width: 252px;
+  /* height: 494px; */
   margin-right: 349px;
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .footer__nav {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 90px;
 }
 
 .footer__nav-link {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2;
-  color: #fff;
+  color: #cacaca;
+}
+
+.footer__socials {
+  display: flex;
 }
 
 .socials__logo {
-  display: inline-block;
+  display: block;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -381,6 +419,7 @@ html {
   width: 60px;
   height: 60px;
   margin-right: 25px;
+  margin-left: 1px;
   background-image: url(/img/od.svg);
 }
 
@@ -396,18 +435,28 @@ html {
 }
 
 .footer__form-header {
+  display: inline-block;
   margin-bottom: 25px;
+  /* padding-top: 1px; */
+  line-height: 59px;
   color: #cacaca;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__input {
   width: 570px;
   height: 60px;
+  margin-bottom: 25px;
   padding: 14px 24px;
   background-color: #414141;
   border-color: transparent;
   border-radius: 16px;
-  margin-bottom: 25px;
   font-size: 16px;
   line-height: 2;
   font-weight: 300;
@@ -416,17 +465,133 @@ html {
 
 .footer__textarea {
   height: 150px;
+  margin-bottom: 32px;
 }
 
 .footer__btn {
+  width: 269px;
+  height: 58px;
   padding: 19px 52px;
+  border: transparent;
 }
 
-.footer__checkbox {
+/* .footer__checkbox {
   color: #fff;
-}
+} */
 
 .footer__text {
-  width: 363px;
-  color: #ffffff;
+  max-width: 363px;
+  padding-top: 1px;
+  color: #cacaca;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 954px;
+  }
+
+  /* Header */
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .header__container {
+    padding: 26px 15px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__logo {
+    max-width: 150px;
+    max-height: 48px;
+    margin: 0;
+  }
+
+  .header__nav-burger {
+    display: block;
+  }
+
+  .header__burger-icon {
+    width: 30px;
+    height: 23px;
+    display: inline-block;
+    background: url(/img/burger.svg) center center no-repeat transparent;
+    background-size: contain;
+  }
+
+  /* Hero */
+
+  .hero__container {
+    height: 668px;
+    margin-bottom: 40px;
+    padding: 160px 77px;
+    background: url("../img/hero_bg_1024.png") center no-repeat white;
+    background-size: cover;
+    border-radius: 32px;
+  }
+
+  .hero__header {
+    max-width: 770px;
+    margin-bottom: 16px;
+    font-size: 60px;
+    line-height: 73.14px;
+  }
+
+  .hero__description {
+    max-width: 660px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  /* About */
+
+  .about__text {
+    max-width: 1235px;
+    margin-bottom: 60px;
+  }
+
+  .about__details {
+    display: block;
+  }
+
+  .about__details-content {
+    height: 640px;
+    width: auto;
+    background-size: cover;
+    margin-right: 0;
+    margin-bottom: 32px;
+    padding-top: 444px;
+  }
+
+  .details-blocks {
+    width: auto;
+    padding: 64px 76px;
+  }
+
+  .about {
+    margin-bottom: 80px;
+  }
+
+  /* How */
+  .how {
+    margin-bottom: 80px;
+  }
+
+  .how__slider-text {
+    max-width: 437px;
+    height: auto;
+    margin-right: 50px;
+    margin-bottom: 25px;
+  }
+
+  .how__slider-img {
+    width: 437px;
+    height: 698px;
+    background: url(/img/how_slider_img1_1024.png) bottom no-repeat white;
+    background-size: 437px 689px;
+  }
 }
